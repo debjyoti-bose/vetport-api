@@ -6,7 +6,9 @@ const { event } = require("../controllers/Events");
 const { _gb } = require("../utils/helper/Global");
 const { clients } = _gb;
 const gzip = require("../middlewares/compression");
-router.post("/login", auth.login);
+const passport = require("../middlewares/passport");
+
+router.post("/login", passport.authenticate("local"), auth.login);
 router.get("/logout", auth.logout);
 router.get("/cpass", auth.changePass);
 router.get("/notification", event.notify);

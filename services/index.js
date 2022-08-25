@@ -24,6 +24,5 @@ module.exports = {
   ...require("./State"),
   ...require("./Auth"),
   ...require("./Jwt"),
-  ...require("./Redis"),
   ...require("./Reports"),
 };
