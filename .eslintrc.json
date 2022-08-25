@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "rest-spread-spacing": ["error", "never"],
+    "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+    "no-unused-vars": "off",
+    "func-call-spacing": ["error", "never"],
+    "no-self-compare": "error"
+  }
+}
